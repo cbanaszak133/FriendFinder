@@ -2,7 +2,7 @@ var friends = [
 	{
 		name: "Steve",
 		photo: "https://en.wikipedia.org/wiki/Steve_Buscemi#/media/File:Steve_Buscemi_2009_portrait.jpg",
-		responses: [
+		'responses[]': [
 			1,
 			4,
 			3,
@@ -17,8 +17,8 @@ var friends = [
 	},	
 	{
 		name: "Larry",
-		photo: "https://goo.gl/images/GyKiSh",
-		responses: [
+		photo: "https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/Elijah_Wood_as_Frodo_Baggins.png/220px-Elijah_Wood_as_Frodo_Baggins.png",
+		'responses[]': [
 			5,
 			5,
 			5,

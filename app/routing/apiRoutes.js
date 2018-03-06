@@ -14,16 +14,19 @@ module.exports = function(app){
 
 		var bestie = friends[0];
 		var bestDiff = 1000;
-		var newFriendScore = newFriend.responses;
+		var newFriendScore = newFriend['responses[]'];
+		console.log(newFriendScore);
+
 
 
 		for(var i = 0; i < friends.length - 1; i++){
-			var compScore = friends[i].responses;
+			var compScore = friends[i]['responses[]'];
 			var currentDiff = 0; 
 			
 			for(var j = 0; j < compScore.length; j++){
 				currentDiff += Math.abs(compScore[j] - newFriendScore[j]);
 			}
+			console.log(currentDiff);
 
 			if(currentDiff < bestDiff){
 				bestDiff = currentDiff;
