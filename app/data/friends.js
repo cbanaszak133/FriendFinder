@@ -33,7 +33,7 @@ var friends = [
 	},
 	{
 		name: "Paul",
-		photo: "https://cinemattire.files.wordpress.com/2013/12/1.jpg"
+		photo: "https://cinemattire.files.wordpress.com/2013/12/1.jpg",
 		'responses[]': [
 			1,
 			2,
