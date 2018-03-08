@@ -13,7 +13,7 @@
 
   <div class="container">
     <div class="jumbotron">
-      <h1><span class="glyphicon glyphicon-user"></span> Friend Finder - Find some Friends!</h1>
+      <h2><span class="glyphicon glyphicon-user"></span> <strong>Friend Finder - Find some Friends!</strong></h2>
       
       <hr>
       <h2>Survey time! Answer truthfully in order to find your most compatable friend!</h2>
@@ -183,7 +183,7 @@
 
     <hr>
 
-    <a href="/api/friends">API Friends List</a>
+    <a href="/api/friends" style="padding-bottom:15px">API Friends List</a>
 
     <div class="modal fade" id="result-modal">
     <div class="modal-dialog" role="document">
@@ -193,7 +193,7 @@
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
-          <img src="" id="match-img">
+          <img src="" id="match-img" style="width:150px height:100px">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -211,9 +211,9 @@
       event.preventDefault();
 
       var userRes = {
-        "name": $("#name").val(),
-        "photo": $("#photoLink").val(),
-        "responses": [
+        name: $("#name").val(),
+        photo: $("#photoLink").val(),
+        responses: [
           $("#q1").val(),
           $("#q2").val(),
           $("#q3").val(),
@@ -234,8 +234,11 @@
 
         $("#result-modal").modal("toggle");
       });
-          // console.log(userRes);
-          // $("#result-modal").modal("toggle");
+      
+      $("#name").val("");
+      $("#photoLink").val("");
+
+      $(".form-control").prop("selectedIndex", 0)
 
     });
 

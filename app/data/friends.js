@@ -1,7 +1,7 @@
 var friends = [
 	{
 		name: "Steve",
-		photo: "https://en.wikipedia.org/wiki/Steve_Buscemi#/media/File:Steve_Buscemi_2009_portrait.jpg",
+		photo: "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/09/Gandalf-the-Grey.jpg",
 		'responses[]': [
 			1,
 			4,
@@ -21,13 +21,29 @@ var friends = [
 		'responses[]': [
 			5,
 			5,
+			2,
+			3,
+			1,
 			5,
+			3,
+			3,
+			2,
+			5
+		]
+	},
+	{
+		name: "Paul",
+		photo: "https://cinemattire.files.wordpress.com/2013/12/1.jpg"
+		'responses[]': [
+			1,
+			2,
+			3,
+			4,
+			1,
 			5,
-			5,
-			5,
-			5,
-			5,
-			5,
+			2,
+			3,
+			4,
 			5
 		]
 	}
